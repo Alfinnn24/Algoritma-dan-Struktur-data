@@ -1,3 +1,5 @@
+package Pertemuan1;
+
 import java.util.Scanner;
 public class Tugas216 {
     public static void main(String[] args) {

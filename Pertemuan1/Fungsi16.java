@@ -1,3 +1,5 @@
+package Pertemuan1;
+
 public class Fungsi16 {
      static int[][]stockBunga = {
         {10, 5, 15, 7},

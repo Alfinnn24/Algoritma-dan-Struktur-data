@@ -1,3 +1,4 @@
+package Pertemuan2;
 public class BukuMain16 {
     public static void main(String[] args) {
         
@@ -12,5 +13,13 @@ public class BukuMain16 {
         bk1.terjual(5);
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
+
+        Buku16 bk2 = new Buku16("Self Reward ", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual(11);
+        bk2.tampilInformasi();
+
+        Buku16 bk3 = new Buku16("Moch. Alfin Burhanudin A.", "Alfin", 200, 33, 190000);
+        bk3.terjual(20);
+        bk3.tampilInformasi();
     }
 }

@@ -1,3 +1,5 @@
+package Pertemuan1;
+
 import java.util.Scanner;
 public class Array16 {
     static Scanner scanner = new Scanner(System.in);

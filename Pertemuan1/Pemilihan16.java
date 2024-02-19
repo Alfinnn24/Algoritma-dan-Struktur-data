@@ -1,3 +1,5 @@
+package Pertemuan1;
+
 import java.util.Scanner;
 public class Pemilihan16 {
     static Scanner input = new Scanner(System.in);
