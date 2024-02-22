@@ -21,5 +21,13 @@ public class BukuMain16 {
         Buku16 bk3 = new Buku16("Moch. Alfin Burhanudin A.", "Alfin", 200, 33, 190000);
         bk3.terjual(20);
         bk3.tampilInformasi();
+
+        System.out.print("Harga total: Rp ");
+        System.out.println(bk3.hitungHargaTotal());
+        System.out.print("Diskon: Rp ");
+        System.out.println(bk3.hitungDiskon());
+        System.out.print("Total bayar: Rp ");
+        System.out.println(bk3.hitungHargaBayar());
+       
     }
 }

@@ -2,7 +2,7 @@ package Pertemuan2;
 public class Buku16 {
     
     String judul, pengarang;
-    int halaman, stock, harga;
+    int halaman, stock, harga, jml;
 
     public Buku16() {
 
@@ -25,6 +25,7 @@ public class Buku16 {
     }
     void terjual(int jml){
         if (stock > 0 && jml <= stock) {
+            this.jml = jml;
             stock -= jml;
             System.out.println(jml + " buku " + judul + " telah terjual.");
         } else {
@@ -38,4 +39,23 @@ public class Buku16 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
+
+    int hitungHargaTotal() {
+        return jml * harga;
+    }
+
+    int hitungDiskon() {
+        if(hitungHargaTotal() >= 150000) {
+            return hitungHargaTotal() * 12/100;
+        } else if(hitungHargaTotal() >= 75000 || hitungHargaTotal() < 150000) {
+            return hitungHargaTotal() * 5/100;
+        } else {
+            return 0;
+        }
+    }
+
+    int hitungHargaBayar() {
+        return hitungHargaTotal() - hitungDiskon();
+    }
+
 }

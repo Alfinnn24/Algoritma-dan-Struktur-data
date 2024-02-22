@@ -89,3 +89,7 @@ hasilnya error karena ketika membuat object menggunakan sintaks 'new Buku16()', 
     4. Urutannya tidak harus sesuai deklarasi method di dalam class.
     5. urutan pemanggilan method bersifat fleksibel dan tergantung logically program yang ingin dibuat. 
 5. <img src = "image-13.png">
+
+## Latihan Praktikum
+
+1. <img src = "image-15.png">
