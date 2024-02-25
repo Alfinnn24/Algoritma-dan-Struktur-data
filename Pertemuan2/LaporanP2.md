@@ -92,4 +92,12 @@ hasilnya error karena ketika membuat object menggunakan sintaks 'new Buku16()', 
 
 ## Latihan Praktikum
 
-1. <img src = "image-15.png">
+# No 1.
+Output:
+ 
+<img src = "image-15.png">
+
+# No 2.
+Output:
+
+<img src = "image-16.png">
