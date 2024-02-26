@@ -9,7 +9,9 @@ public class PersegiPanjang16 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        PersegiPanjang16[] ppArray = new PersegiPanjang16[3];
+        System.out.println("Masukkan banyak persegi panjang: ");
+        int jumlah = sc.nextInt();
+        PersegiPanjang16[] ppArray = new PersegiPanjang16[jumlah];
 
         for (int i = 0; i < 3; i++) {
             ppArray[i] = new PersegiPanjang16();

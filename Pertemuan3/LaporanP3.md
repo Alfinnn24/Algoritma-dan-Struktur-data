@@ -21,8 +21,8 @@ konstruktur pada baris program berikut :
 5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2
 
 Jawaban:
-1. ehdueh
-2. 
+1. Harus memiliki atribut dan method, karena jika tidak ada atribut dan method maka objek nya tidak akan bisa terbentuk.
+2. Class tersebut tidak memiliki konstruktor, pada baris program tersebut bukan merupakan pemanggilan konstruktor, tetapi baris kode tersebut menginstansiasi objek pada array objek ke-2 di PersegiPanjang
 3. Kode tersebut menjelaskan bahwa kita membuat sebuah array yang dapat menampung 3 objek dari class 'PersegiPanjang16' dan menyimpannya dalam variable 'ppArray'.
 4. Kode tersebut adalah array 'ppArray' yang bermaksud untuk menyimpan objek-objek dari 'PersegiPanjang16', kemudian mengakses objek pada indeks ke-1 dari array tersebut untuk mengatur nilai atribut 'panjang' dan 'lebar'.
 5. Karena pada class main itu bertanggung jawab untuk mengatur alur eksekusi utama program, sedangkan class PersegiPanjang  bertanggung jawab untuk mendefinisikan objek persegi panjang.
@@ -49,9 +49,10 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan!
 Jawaban:
 1. Ya, array of object dapat di implementasikan pada array 2 dimensi.
 2. Karena pada array of object dapat di implementasikan dalam array 2 dimensi dengan cara mendefinisikan array 2 dimensi yang dimana setiap elemennya adalah objek dari suatu class.
-3. Karena pada kode tersebut belum membuat objek nya.
-4. 
-5. 
+3. Karena pada kode tersebut belum melakukan instansiasi objek array nya, sehingga menyebabkan arror.
+4. Dengan cara membuat variable yang nilai nya diisi melalui inputan, lalu variable tersebut dipakai pada saat deklarasi array.
+<img src = "image-16.png">
+5. Boleh saja, tetapi yang akan dijalankan oleh program adalah instansiasi yang terakhir.
 
 ##  Percobaan 3: Penambahan Operasi Matematika di Dalam Method
 
@@ -86,3 +87,11 @@ Jawaban:
 2. Seperti gambar dibawah ini:
 <img src = "image-12.png">
 3. 
+<img src = "image-13.png">
+4. 
+<img src = "image-14.png">
+5. 
+<img src = "image-15.png">
+
+## Latihan Praktikum
+1. 
