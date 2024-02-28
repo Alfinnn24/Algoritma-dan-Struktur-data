@@ -8,10 +8,13 @@ public class LimasSegiEmpat16 {
         tinggiLimas = tl;
     }
     public double hitungLuasPermukaan() {
-        return panjangSisiAlas*panjangSisiAlas+4+1/2*panjangSisiAlas*tinggiLimas;
+        double luasAlas = panjangSisiAlas*panjangSisiAlas;
+        double luasSisiTegak = 0.5*panjangSisiAlas*tinggiLimas;
+        return luasAlas + (4 *luasSisiTegak);
     }
     public double hitungVolume() {
-        return 1/3*panjangSisiAlas*panjangSisiAlas*tinggiLimas;
+        double luasAlas = panjangSisiAlas*panjangSisiAlas;
+        return 1/3*luasAlas*tinggiLimas;
     }
 }
 

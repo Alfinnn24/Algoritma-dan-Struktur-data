@@ -8,11 +8,11 @@ public class Kerucut16 {
         sisiMiring = sm;
     }
     public double hitungLuasPermukaan() {
-        return Math.PI * jarijari * jarijari + sisiMiring;
+        return Math.PI * jarijari * (jarijari + sisiMiring);
     }
     public double hitungVolume() {
-        double tinggi = tinggi = 2;
-        return 1/3 * Math.PI * Math.pow(jarijari, jarijari) * tinggi;
+        double tinggi = Math.sqrt((sisiMiring * sisiMiring) - (jarijari * jarijari));
+        return 1/3 * Math.PI * jarijari * jarijari * tinggi;
 
     }
     
