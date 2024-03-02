@@ -94,4 +94,13 @@ Jawaban:
 <img src = "image-15.png">
 
 ## Latihan Praktikum
-1. 
+
+# No 1.
+Output:
+
+<img src = "image-17.png">
+<img src = "image-18.png">
+
+# No 2.
+Output:
+

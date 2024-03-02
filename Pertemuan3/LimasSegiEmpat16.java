@@ -1,7 +1,7 @@
 package Pertemuan3;
 
 public class LimasSegiEmpat16 {
-    double panjangSisiAlas, tinggiLimas;
+    public double panjangSisiAlas, tinggiLimas;
 
     public LimasSegiEmpat16(double psa, double tl) {
         panjangSisiAlas = psa;
@@ -14,7 +14,7 @@ public class LimasSegiEmpat16 {
     }
     public double hitungVolume() {
         double luasAlas = panjangSisiAlas*panjangSisiAlas;
-        return 1/3*luasAlas*tinggiLimas;
+        return 0.33*luasAlas*tinggiLimas;
     }
 }
 

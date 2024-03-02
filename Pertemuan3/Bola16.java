@@ -11,6 +11,6 @@ public class Bola16 {
         return 4*Math.PI*jarijari*jarijari;
     }
     public double hitungVolume() {
-        return 4/3*Math.PI*jarijari*jarijari*jarijari;
+        return 1.33*Math.PI*jarijari*jarijari*jarijari;
     }
 }
