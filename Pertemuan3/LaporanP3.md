@@ -104,3 +104,9 @@ Output:
 # No 2.
 Output:
 
+<img src = "image-19.png">
+
+# No 3.
+Output:
+
+<img src = "image-20.png">
