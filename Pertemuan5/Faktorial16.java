@@ -6,8 +6,8 @@ public class Faktorial16 {
 
     int FaktorialBF(int n){
         int fakto = 1;
-        for (int i = n; i > 0; i--) {
-            fakto *= i;
+        for (int i = 1; i <= n; i++) {
+            fakto = fakto * i;
         }
         return fakto;
     }
