@@ -83,4 +83,30 @@ Pertanyaan:
 dengan cara descending.
 
 Jawaban:
+
 1. <img src = "image-16.png">
+
+## Latihan Praktikum
+
+Pertanyaan:
+Sebuah platform travel yang menyediakan layanan pemesanan kebutuhan travelling sedang 
+mengembangkan backend untuk sistem pemesanan/reservasi akomodasi (penginapan), salah 
+satu fiturnya adalah menampilkan daftar penginapan yang tersedia berdasarkan pilihan filter 
+yang diinginkan user. Daftar penginapan ini harus dapat disorting berdasarkan 
+1. Harga dimulai dari harga termurah ke harga tertinggi. 
+2. Rating bintang penginapan dari bintang tertinggi (5) ke terendah (1) 
+
+Buatlah proses sorting data untuk kedua filter tersebut dengan menggunakan algoritma 
+bubble sort dan selection sort.
+
+Jawaban:
+
+1. 
+<img src = "image-18.png">
+
+<img src = "image-19.png">
+
+2. 
+<img src = "image-20.png">
+
+<img src = "image-21.png">
