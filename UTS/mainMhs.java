@@ -48,24 +48,24 @@ public class mainMhs {
 
         //Sebelum Sorting
         mhs.tampil();
-        int posisisebelum =mhs.FindBinarySearchasce(5, 0, JmlMhs -1);
+        int posisisebelum =mhs.FindBinarySearchascen(5, 0, JmlMhs -1);
         mhs.tampilPosisi(5, posisisebelum );
 
-        //Sorting ascending
+        //Sorting Ascending
         mhs.selectionSortAscen();
         mhs.tampil();
-        int posisiAscending = mhs.FindBinarySearchasce(5, 0, JmlMhs -1);
+        int posisiAscending = mhs.FindBinarySearchascen(5, 0, JmlMhs -1);
         mhs.tampilPosisi(5, posisiAscending);
 
-        //Sorting Descendinf
+        //Sorting Descending
         mhs.selectionSortDescen();
         mhs.tampil();
-        int  posisiDescending= mhs.FindBinarySearchdesce(5, 0, JmlMhs -1);
+        int  posisiDescending= mhs.FindBinarySearchdescen(5, 0, JmlMhs -1);
         mhs.tampilPosisi(5, posisiDescending);
 
         mhs.selectionSortAscen();
         mhs.tampil();
-        int posisitidak = mhs.FindBinarySearchasce(49, 0, JmlMhs -1);
+        int posisitidak = mhs.FindBinarySearchascen(49, 0, JmlMhs -1);
         mhs.tampilPosisi(49, posisitidak);
        
         
