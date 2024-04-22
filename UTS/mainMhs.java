@@ -2,8 +2,8 @@ package UTS;
 
 public class mainMhs {
     public static void main(String[] args) {    
-        nilaiMahasiswa maha = new nilaiMahasiswa(); 
-        int jumMaha=17;
+        nilaiMahasiswa mhs = new nilaiMahasiswa(); 
+        int JmlMhs=17;
 
         mahasiswa m1 = new mahasiswa(33);
         mahasiswa m2 = new mahasiswa(7);
@@ -25,48 +25,48 @@ public class mainMhs {
 
         
 
-        maha.tambah(m1);
-        maha.tambah(m2);
-        maha.tambah(m3);
-        maha.tambah(m4);
-        maha.tambah(m5);
-        maha.tambah(m6);
-        maha.tambah(m7);
-        maha.tambah(m8);
-        maha.tambah(m9);
-        maha.tambah(m10);
-        maha.tambah(m11);
-        maha.tambah(m12);
-        maha.tambah(m13);
-        maha.tambah(m14);
-        maha.tambah(m15);
-        maha.tambah(m16);
-        maha.tambah(m17);
+        mhs.tambah(m1);
+        mhs.tambah(m2);
+        mhs.tambah(m3);
+        mhs.tambah(m4);
+        mhs.tambah(m5);
+        mhs.tambah(m6);
+        mhs.tambah(m7);
+        mhs.tambah(m8);
+        mhs.tambah(m9);
+        mhs.tambah(m10);
+        mhs.tambah(m11);
+        mhs.tambah(m12);
+        mhs.tambah(m13);
+        mhs.tambah(m14);
+        mhs.tambah(m15);
+        mhs.tambah(m16);
+        mhs.tambah(m17);
 
         
         
 
         //Sebelum Sorting
-        maha.tampil();
-        int posisisebelum =maha.FindBinarySearchasce(5, 0, jumMaha -1);
-        maha.tampilPosisi(5, posisisebelum );
+        mhs.tampil();
+        int posisisebelum =mhs.FindBinarySearchasce(5, 0, JmlMhs -1);
+        mhs.tampilPosisi(5, posisisebelum );
 
         //Sorting ascending
-        maha.selectionSortAscen();
-        maha.tampil();
-        int posisiAscending = maha.FindBinarySearchasce(5, 0, jumMaha -1);
-        maha.tampilPosisi(5, posisiAscending);
+        mhs.selectionSortAscen();
+        mhs.tampil();
+        int posisiAscending = mhs.FindBinarySearchasce(5, 0, JmlMhs -1);
+        mhs.tampilPosisi(5, posisiAscending);
 
         //Sorting Descendinf
-        maha.selectionSortDescen();
-        maha.tampil();
-        int  posisiDescending= maha.FindBinarySearchdesce(5, 0, jumMaha-1);
-        maha.tampilPosisi(5, posisiDescending);
+        mhs.selectionSortDescen();
+        mhs.tampil();
+        int  posisiDescending= mhs.FindBinarySearchdesce(5, 0, JmlMhs -1);
+        mhs.tampilPosisi(5, posisiDescending);
 
-        maha.selectionSortAscen();
-        maha.tampil();
-        int posisitidak = maha.FindBinarySearchasce(49, 0, jumMaha-1);
-        maha.tampilPosisi(49, posisitidak);
+        mhs.selectionSortAscen();
+        mhs.tampil();
+        int posisitidak = mhs.FindBinarySearchasce(49, 0, JmlMhs -1);
+        mhs.tampilPosisi(49, posisitidak);
        
         
     }
