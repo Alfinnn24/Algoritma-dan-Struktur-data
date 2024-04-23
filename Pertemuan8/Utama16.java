@@ -6,7 +6,11 @@ public class Utama16 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Gudang16 gudang = new Gudang16(7);
+        System.out.print("Input kapasitas gudang: ");
+        int kap = scanner.nextInt();
+        scanner.nextLine();
+
+        Gudang16 gudang = new Gudang16(kap);
 
         while (true) {
             System.out.println("================================");
@@ -42,7 +46,9 @@ public class Utama16 {
                     break;
 
                 case 4:
+                    gudang.lihatBarangTeratas();
                     break;
+
                     default:
                     System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
             }
