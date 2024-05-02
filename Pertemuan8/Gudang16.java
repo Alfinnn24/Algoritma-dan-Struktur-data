@@ -1,5 +1,7 @@
 package Pertemuan8;
 
+import java.util.Stack;
+
 public class Gudang16 {
     Barang16[] tumpukan;
     int size, top;
@@ -28,7 +30,7 @@ public class Gudang16 {
         if (!cekPenuh()) {
             top++;
             tumpukan[top] = brg;
-            System.out.println("Barang "+ brg.nama+" berhasil ditambahkan ke gudang");
+            System.out.println("Barang "+ brg.nama+ " berhasil ditambahkan ke gudang");
         }else{
             System.out.println("Gagal! Tumpukan barang di gudang sudah penuh");
         }
@@ -39,6 +41,7 @@ public class Gudang16 {
             Barang16 delete = tumpukan[top];
             top--;
             System.out.println("Barang "+delete.nama+" diambil dari gudang");
+            System.out.println("Kode unik dalam biner : " + konversiDesimalkeBiner(delete.kode));
             return delete;
         }else{
             System.out.println("Tumpukan barang kosong");
@@ -65,6 +68,46 @@ public class Gudang16 {
             }
         } else {
             System.out.println("Tumpukan barang kosong");
+        }
+    }
+    public String konversiDesimalkeBiner(int kode) {
+        StackKonversi16 stack = new StackKonversi16();
+        while (kode != 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+    //Soal latihan
+    public Barang16 lihatBarangTerbawah() {
+        if(!cekKosong()) {
+            System.out.println("Barang terbawah : " + tumpukan[0].nama);
+            return tumpukan[0];
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+    boolean cariNama(String nama, int mulai) {
+        if(nama.equalsIgnoreCase(tumpukan[mulai].nama)) {
+            System.out.println("Barang ditemukan.");
+            return true;
+        } else {
+            return cariNama(nama, mulai+1);
+        }
+    }
+
+    boolean cariKode(int kode, int mulai) {
+        if(kode == tumpukan[mulai].kode) {
+            System.out.println("Barang ditemukan.");
+            return true;
+        } else {
+            return cariKode(kode, mulai+1);
         }
     }
 }
