@@ -10,5 +10,4 @@ public class Node {
         this.point = point;
         this.next = berikutnya;
     }
-    
 }

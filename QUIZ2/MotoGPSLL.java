@@ -1,11 +1,8 @@
 package QUIZ2;
 
 public class MotoGPSLL {
-    Node head, tail;
+    Node head;
 
-    public boolean isEmpty(){
-        return head == null;
-    }
     public void addFirst(String nama, int point) {
         Node newNode = new Node(nama, point, null);
 

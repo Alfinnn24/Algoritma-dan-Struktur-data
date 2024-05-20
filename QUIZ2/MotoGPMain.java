@@ -3,7 +3,19 @@ package QUIZ2;
 import java.util.Scanner;
 
 public class MotoGPMain {
+    public static void menu() {
+        System.out.println("|-------------------------------|");
+        System.out.println("|========== Menu Utama =========|");
+        System.out.println("|===============================|");
+        System.out.println("| 1. Tampilkan Klasemen         |");
+        System.out.println("| 2. Tambah Point Pembalap      |");
+        System.out.println("| 3. Keluar                     |");
+        System.out.println("=================================");
+        System.out.print("Masukkan pilihan Anda: ");
+    }
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         MotoGPSLL motoGP = new MotoGPSLL();
@@ -33,5 +45,4 @@ public class MotoGPMain {
         motoGP.bubbleSort();
         motoGP.print();
     }
-}   
-
+}
